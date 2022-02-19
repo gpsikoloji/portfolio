@@ -20,7 +20,7 @@ const Header = () => (
     <Div1>
       <Link href="/">
         <a style={{ display: "flex", alignItems: "center" }}>
-          <img src="/gpsikoloji.png" style={{ width: 100, height: "auto" }} />
+          <img src="/gp.png" style={{ width: 100, height: "auto" }} />
         </a>
       </Link>
     </Div1>
