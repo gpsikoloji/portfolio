@@ -6,6 +6,7 @@ export default {
   },
   // Colors for layout
   colors: {
+    textPrimary: "red",
     primary1: "hsl(204,23.8%,95.9%)",
     background1: "#0F1624", //TODO:global background color
     accent1: "hsl(34.9,98.6%,72.9%)",
