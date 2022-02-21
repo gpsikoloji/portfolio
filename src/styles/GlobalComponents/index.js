@@ -3,24 +3,22 @@ import styled from "styled-components";
 export const Section = styled.section`
   display: ${(props) => (props.grid ? "grid" : "flex")};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
-  padding: ${(props) => (props.nopadding ? "0" : "32px 48px 0")};
+  flex-wrap: ${(props) => (props.wrap ? "wrap" : "nowrap")};
+  padding: ${(props) => (props.nopadding ? "0" : "32px 48px")};
   margin: 0 auto;
   max-width: 1040px;
-  box-sizing: content-box;
   position: relative;
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    padding: 24px 48px 0;
-    flex-direction: column;
+    padding: 24px 48px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
+    padding: ${(props) => (props.nopadding ? "0" : "16px 16px")};
 
-    width: calc(100vw - 32px);
-    flex-direction: column;
+    width: 100%;
   }
 `;
 
@@ -124,7 +122,6 @@ export const SecondaryBtn = styled.button`
   color: #fff;
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.33);
-  box-sizing: border-box;
   border-radius: 999px;
   padding: 16px 24px;
   font-weight: 600;
