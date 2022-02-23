@@ -21,7 +21,7 @@ const Header = () => (
     </Div1>
     <Div2>
       <li>
-        <Link href="/hakkimizda">
+        <Link href="/">
           <NavLink>Hakkımızda</NavLink>
         </Link>
       </li>

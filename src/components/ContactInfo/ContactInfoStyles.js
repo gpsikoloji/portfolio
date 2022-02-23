@@ -8,6 +8,8 @@ margin-bottom: 16px;
 transition: 0.3s ease;
 position: relative;
 left: 0;
+display: flex;
+align-items: center;
 
 &:hover {
   color: #fff;
@@ -60,4 +62,8 @@ export const SocialContainer = styled.div`
     padding-right: 16px;
     flex-wrap: wrap;
   }
+`;
+
+export const LinkText = styled.span`
+  padding-left: 1rem;
 `;
