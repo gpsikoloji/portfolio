@@ -16,7 +16,6 @@ export const BlogCard = styled.div`
   width: 100%;
   height: 100%;
   display: block;
-  cursor: pointer;
   background-color: ${(props) => props.theme.colors.cardBackground};
 `;
 
@@ -44,6 +43,7 @@ export const HeaderThree = styled.h3`
 export const Img = styled.img` 
   border-radius: 50%;
   width: 50%;
+  cursor: pointer;
   object-fit: cover;
   overflow: hidden;
 `;

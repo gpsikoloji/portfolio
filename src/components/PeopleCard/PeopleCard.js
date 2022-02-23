@@ -12,16 +12,17 @@ import {
 
 const PeopleCard = (props) => {
   return (
-    <Link href={`/uzmanlarimiz/${props.url}`}>
-      <CardContainer>
+    <CardContainer>
         <BlogCard>
-          <Img src={props.image} />
+            <Link href={`/uzmanlarimiz/${props.url}`}>
+              <Img src={props.image} />
+            </Link>
           <TitleBox>
             <HeaderThree title={props.title}>{props.title}</HeaderThree>
           </TitleBox>
+           
         </BlogCard>
       </CardContainer>
-    </Link>
   );
 };
 
