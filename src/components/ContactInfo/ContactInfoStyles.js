@@ -1,34 +1,51 @@
 import styled from "styled-components";
 
 export const LinkItem = styled.a`
-font-size: 18px;
-line-height: 30px;
-color: rgba(255, 255, 255, 0.75);
-margin-bottom: 16px;
-transition: 0.3s ease;
-position: relative;
-left: 0;
-display: flex;
-align-items: center;
-
-&:hover {
-  color: #fff;
-  left: 6px;
-}
-
-@media ${(props) => props.theme.breakpoints.md} {
-  font-size: 17px;
-  line-height: 28px;
-  display: flex;
-}
-
-@media ${(props) => props.theme.breakpoints.sm} {
-  font-size: 15px;
-  line-height: 14px;
-  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 16px;
+  transition: 0.3s ease;
+  position: relative;
+  left: 0;
   display: flex;
   align-items: center;
-}
+
+  &:hover {
+    color: #fff;
+    left: 6px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 17px;
+    line-height: 28px;
+    display: flex;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 15px;
+    line-height: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+`;
+
+export const FlexContainer = styled.div`
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+`;
+
+export const FlexHalfBox = styled.div`
+  display: flex;
+  width: 50%;
+  height: auto;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+  }
 `;
 
 export const LinkColumn = styled.div`
