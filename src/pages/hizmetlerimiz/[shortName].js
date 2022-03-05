@@ -4,6 +4,7 @@ import { Layout } from "../../layout/Layout";
 
 import { servicesData } from "../../constants/constants";
 import { Section } from "../../styles/GlobalComponents";
+import ServiceDetailComp from "../../components/ServiceDetailComp/ServiceDetailComp";
 
 const ServiceDetail = (props) => {
   const router = useRouter();
@@ -15,12 +16,12 @@ const ServiceDetail = (props) => {
     <Layout>
       <Section row wrap>
         {data?.length ? (
-          <div>
-            <div>Image: {data[0].image}</div>
-            <div>Title: {data[0].title}</div>
-            <div>Desc: {data[0].description}</div>
-          </div>
-        ) : null}
+                      <ServiceDetailComp
+                      title={data[0].title}
+                      image={data[0].image}
+                      desc= {data[0].description}
+                    />
+          ) : null}
       </Section>
     </Layout>
   );
