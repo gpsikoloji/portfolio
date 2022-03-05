@@ -8,14 +8,12 @@ export const CardContainer = styled.div`
 `;
 
 export const BlogCard = styled.div`
-  border-radius: 10px;
-  overflow: hidden;
   text-align: center;
   width: 100%;
   height: 100%;
   display: block;
   cursor: pointer;
-  background-color: ${(props) => props.theme.colors.cardBackground};
+  background-color: transparent;
 `;
 
 export const TitleBox = styled.div`
