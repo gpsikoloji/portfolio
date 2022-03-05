@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 
 import { Layout } from "../../layout/Layout";
 
-import { peoplesData } from "../../constants/constants";
+import { peoplesData } from "../../../public/constants/constants";
 import { Section } from "../../styles/GlobalComponents";
 import PeopleDetailComp from "../../components/PeopleDetailComp/PeopleDetailComp";
 

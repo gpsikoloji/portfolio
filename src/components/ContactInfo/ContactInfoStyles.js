@@ -3,16 +3,18 @@ import styled from "styled-components";
 export const LinkItem = styled.a`
   font-size: 18px;
   line-height: 30px;
-  color: rgba(255, 255, 255, 0.75);
+  color: ${(props) => props.theme.colors.headerText};
   margin-bottom: 16px;
   transition: 0.3s ease;
   position: relative;
   left: 0;
   display: flex;
   align-items: center;
-
+  & svg:{
+    color: ${(props) => props.theme.colors.headerText};
+  }
   &:hover {
-    color: #fff;
+    color: ${(props) => props.theme.colors.headerText2};
     left: 6px;
   }
 
@@ -83,4 +85,5 @@ export const SocialContainer = styled.div`
 
 export const LinkText = styled.span`
   padding-left: 1rem;
+  color: ${(props) => props.theme.colors.textPrimary}
 `;

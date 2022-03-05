@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 
 import { Layout } from "../../layout/Layout";
 
-import { servicesData } from "../../constants/constants";
+import { servicesData } from "../../../public/constants/constants";
 import { Section } from "../../styles/GlobalComponents";
 import ServiceDetailComp from "../../components/ServiceDetailComp/ServiceDetailComp";
 

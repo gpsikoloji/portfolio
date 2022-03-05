@@ -1,6 +1,6 @@
 import React from "react";
 
-import { peoplesData } from "../../constants/constants";
+import { peoplesData } from "../../../public/constants/constants";
 import Header from "../Header/Header";
 
 import {
@@ -17,11 +17,12 @@ import {
 export const PeopleDetailComp = (props) => {
     return (
         <CardContainer>
+          
+        <BlogCard>
+          <Img src={props.image} />
           <TitleBox>
             <HeaderThree title={props.title}>{props.title}</HeaderThree>
           </TitleBox>
-        <BlogCard>
-          <Img src={props.image} />
           <DescBox>
             <Description desc={props.desc}>{props.desc}</Description>
           </DescBox>

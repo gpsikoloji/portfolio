@@ -6,9 +6,9 @@ export const Container = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 4rem;
   padding-top: 1rem;
-  background-color: #0f1624;
+  background-color: ${(props) => props.theme.colors.background1};
   position: fixed;
   top: 0;
   width: 100%;
@@ -52,10 +52,10 @@ export const Div3 = styled.div`
 export const NavLink = styled.a`
   font-size: 2rem;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  color:  ${(props) => props.theme.colors.headerText};
   transition: 0.4s ease;
   &:hover {
-    color: #fff;
+    color: ${(props) => props.theme.colors.headerText2};
     opacity: 1;
     cursor: pointer;
   }
@@ -115,7 +115,7 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 
 export const SocialIcons = styled.a`
   transition: 0.3s ease;
-  color: white;
+  color: ${(props) => props.theme.colors.headerText};
   border-radius: 50%;
   padding: 8px;
   width: 5rem;
@@ -125,7 +125,7 @@ export const SocialIcons = styled.a`
   align-items: center;
 
   &:hover {
-    background-color: #212d45;
+    background-color: ${(props) => props.theme.colors.headerText2};
     transform: scale(1.2);
     cursor: pointer;
   }

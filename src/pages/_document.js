@@ -47,37 +47,37 @@ export default class MyDocument extends Document {
             href="favicon-16x16.png"
             sizes="16x16"
           />
-          <meta name="title" content="gpsikoloji" />
+          <meta name="title" content="G Psikoloji" />
           <meta
             name="description"
-            content="Hey there, This is Vipul Jha aka lordarcadius. I am an Android & Flutter developer who also works on ROMs, Kernels, & Scripts."
+            content="Güçlenerek Gelişmenizde Güvenli Liman G Psikoloji"
           />
           <meta property="og:type" content="website" />
           <meta
             property="og:title"
-            content="Vipul Jha - Android & Flutter Dev"
+            content="G Psikoloji"
           />
           <meta
             property="og:description"
-            content="Hey there, This is Vipul Jha aka lordarcadius. I am an Android & Flutter developer who also works on ROMs, Kernels, & Scripts."
+            content="Güçlenerek Gelişmenizde Güvenli Liman G Psikoloji"
           />
-          <meta
+          {/* <meta
             property="og:image"
-            content="https://www.vipuljha.com/images/banner.png"
-          />
+            content=""
+          /> */}
           <meta property="twitter:card" content="summary_large_image" />
           <meta
             property="twitter:title"
-            content="Vipul Jha - Android & Flutter Dev"
+            content="G Psikoloji"
           />
           <meta
             property="twitter:description"
-            content="Hey there, This is Vipul Jha aka lordarcadius. I am an Android & Flutter developer who also works on ROMs, Kernels, & Scripts."
+            content="Güçlenerek Gelişmenizde Güvenli Liman G Psikoloji"
           />
-          <meta
+          {/* <meta
             property="twitter:image"
-            content="https://www.vipuljha.com/images/banner.png"
-          />
+            content=""
+          /> */}
         </Head>
         <body>
           <Main />

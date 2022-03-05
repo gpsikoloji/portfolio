@@ -7,7 +7,7 @@ import { Layout } from "../../layout/Layout";
 import { Section } from "../../styles/GlobalComponents";
 
 import PeopleCard from "../../components/PeopleCard/PeopleCard";
-import { peoplesData } from "../../constants/constants";
+import { peoplesData } from "../../../public/constants/constants";
 
 const Home = () => {
   return (
