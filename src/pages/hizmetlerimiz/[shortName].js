@@ -9,11 +9,11 @@ const ServiceDetail = (props) => {
     <Layout>
       <Section row wrap>
         {props.data?.length ? (
-          <div>
-            <div>Image: {props.data[0].image}</div>
-            <div>Title: {props.data[0].title}</div>
-            <div>Desc: {props.data[0].description}</div>
-          </div>
+          <ServiceDetailComp
+          title={props.data[0].title}
+          image={props.data[0].image}
+          desc= {props.data[0].description}
+        />
         ) : null}
 
       </Section>
