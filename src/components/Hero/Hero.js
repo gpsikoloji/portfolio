@@ -13,20 +13,11 @@ const Hero = (props) => (
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          Hey there,
+          Güçlenerek  <br />Gelişmenizde<br /> Güvenli Liman<br /> G Psikoloji
         </SectionTitle>
-        <SectionText>
-          Hey there, This is Vipul Jha aka lordarcadius. I am an Android &
-          Flutter developer who also works on ROMs, Kernels, & Scripts.
-        </SectionText>
-        <Button
-          onClick={(e) => {
-            e.preventDefault();
-            //window.location.href = '/files/resume.pdf'; TODO:resume deactivated
-          }}
-        >
-          My Resume
-        </Button>
+        {/* <SectionText>
+          Uzman kadromuzla tanışın!!
+        </SectionText> */}
       </LeftSection>
     </Section>
   </>

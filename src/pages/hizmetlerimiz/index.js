@@ -7,7 +7,7 @@ import { Layout } from "../../layout/Layout";
 import { Section } from "../../styles/GlobalComponents";
 
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
-import { servicesData } from "../../constants/constants";
+import { servicesData } from "../../../public/constants/constants";
 
 const Home = () => {
   return (

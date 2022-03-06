@@ -1,7 +1,8 @@
 import { Layout } from "../../layout/Layout";
 
-import { servicesData } from "../../constants/constants";
+import { servicesData } from "../../../public/constants/constants";
 import { Section } from "../../styles/GlobalComponents";
+import ServiceDetailComp from "../../components/ServiceDetailComp/ServiceDetailComp";
 
 const ServiceDetail = (props) => {
   return (
@@ -14,6 +15,7 @@ const ServiceDetail = (props) => {
             <div>Desc: {props.data[0].description}</div>
           </div>
         ) : null}
+
       </Section>
     </Layout>
   );

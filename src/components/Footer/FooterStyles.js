@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.section`
   width: "100%";
-  max-width: 1040px;
-  padding: 2rem 48px 40px;
-  margin: 1rem auto;
-
+  padding: 2rem 48px;
+  -webkit-box-shadow: 0px -3px 9px 0px rgba(41, 41, 41, 0.25);
+  -moz-box-shadow: 0px -3px 9px 0px rgba(41, 41, 41, 0.25);
+  box-shadow: 0px -3px 9px 0px rgba(41, 41, 41, 0.25);
+ 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0 16px 48px;
   }
@@ -14,14 +15,14 @@ export const FooterWrapper = styled.section`
 export const LinkItem = styled.a`
   font-size: 18px;
   line-height: 30px;
-  color: rgba(255, 255, 255, 0.75);
+  color: ${(props) => props.theme.colors.headerText};
   margin-bottom: 16px;
   transition: 0.3s ease;
   position: relative;
   left: 0;
 
   &:hover {
-    color: #fff;
+    color: ${(props) => props.theme.colors.headerText2};
     left: 6px;
   }
 
@@ -41,7 +42,7 @@ export const LinkItem = styled.a`
 `;
 
 export const SocialIconsContainer = styled.div`
-  max-width: 1040px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 
@@ -77,7 +78,7 @@ export const CompanyContainer = styled.div`
 `;
 
 export const Slogan = styled.p`
-  color: rgba(255, 255, 255, 0.5);
+  color: ${(props) => props.theme.colors.headerText};
   min-width: 280px;
   letter-spacing: 0.02em;
   font-size: 18px;
@@ -142,7 +143,7 @@ export const LinkTitle = styled.h4`
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.4);
+  color: ${(props) => props.theme.colors.headerText};
   margin-bottom: 16px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
