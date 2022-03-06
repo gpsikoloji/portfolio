@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 // import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import {
@@ -13,16 +12,15 @@ import {
 const PeopleCard = (props) => {
   return (
     <CardContainer>
-        <BlogCard>
-            <Link href={`/uzmanlarimiz/${props.url}`}>
-              <Img src={props.image} />
-            </Link>
-          <TitleBox>
-            <HeaderThree title={props.title}>{props.title}</HeaderThree>
-          </TitleBox>
-           
-        </BlogCard>
-      </CardContainer>
+      <BlogCard>
+        <a href={`/uzmanlarimiz/${props.url}`}>
+          <Img src={props.image} />
+        </a>
+        <TitleBox>
+          <HeaderThree title={props.title}>{props.title}</HeaderThree>
+        </TitleBox>
+      </BlogCard>
+    </CardContainer>
   );
 };
 

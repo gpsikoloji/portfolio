@@ -15,7 +15,6 @@ const ServiceDetail = (props) => {
             <div>Desc: {props.data[0].description}</div>
           </div>
         ) : null}
-
       </Section>
     </Layout>
   );

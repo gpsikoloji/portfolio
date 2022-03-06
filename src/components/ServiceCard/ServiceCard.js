@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 // import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import {
@@ -12,7 +11,7 @@ import {
 
 const ServiceCard = (props) => {
   return (
-    <Link href={`/hizmetlerimiz/${props.url}`}>
+    <a href={`/hizmetlerimiz/${props.url}`}>
       <CardContainer>
         <BlogCard>
           <Img src={props.image} />
@@ -21,7 +20,7 @@ const ServiceCard = (props) => {
           </TitleBox>
         </BlogCard>
       </CardContainer>
-    </Link>
+    </a>
   );
 };
 

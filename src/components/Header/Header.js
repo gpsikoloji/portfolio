@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import { AiFillInstagram } from "react-icons/ai";
 import {
@@ -13,32 +12,22 @@ import {
 const Header = () => (
   <Container>
     <Div1>
-      <Link href="/">
-        <a style={{ display: "flex", alignItems: "center" }}>
-          <img src="/gp.png" style={{ width: "auto", height: "90px" }} />
-        </a>
-      </Link>
+      <a href="/" style={{ display: "flex", alignItems: "center" }}>
+        <img src="/gp.png" style={{ width: "auto", height: "90px" }} />
+      </a>
     </Div1>
     <Div2>
       <li>
-        <Link href="/">
-          <NavLink>Hakkımızda</NavLink>
-        </Link>
+        <NavLink href="/">Hakkımızda</NavLink>
       </li>
       <li>
-        <Link href="/uzmanlarimiz">
-          <NavLink>Uzmanlarımız</NavLink>
-        </Link>
+        <NavLink href="/uzmanlarimiz">Uzmanlarımız</NavLink>
       </li>
       <li>
-        <Link href="/hizmetlerimiz">
-          <NavLink>Hizmetlerimiz</NavLink>
-        </Link>
+        <NavLink href="/hizmetlerimiz">Hizmetlerimiz</NavLink>
       </li>
       <li>
-        <Link href="/iletisim">
-          <NavLink>İletişim</NavLink>
-        </Link>
+        <NavLink href="/iletisim">İletişim</NavLink>
       </li>
     </Div2>
     <Div3>
