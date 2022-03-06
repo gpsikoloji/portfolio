@@ -11,16 +11,16 @@ import {
 
 const ServiceCard = (props) => {
   return (
-    <a href={`/hizmetlerimiz/${props.url}`}>
-      <CardContainer>
+    <CardContainer>
+      <a href={`/hizmetlerimiz/${props.url}`}>
         <BlogCard>
           <Img src={props.image} />
           <TitleBox>
             <HeaderThree title={props.title}>{props.title}</HeaderThree>
           </TitleBox>
         </BlogCard>
-      </CardContainer>
-    </a>
+      </a>
+    </CardContainer>
   );
 };
 
