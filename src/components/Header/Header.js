@@ -1,5 +1,7 @@
 import React from "react";
 import { AiFillInstagram } from "react-icons/ai";
+import Burger from './Burger';
+
 import {
   Container,
   Div1,
@@ -17,18 +19,7 @@ const Header = () => (
       </a>
     </Div1>
     <Div2>
-      <li>
-        <NavLink href="/">Hakkımızda</NavLink>
-      </li>
-      <li>
-        <NavLink href="/uzmanlarimiz">Uzmanlarımız</NavLink>
-      </li>
-      <li>
-        <NavLink href="/hizmetlerimiz">Hizmetlerimiz</NavLink>
-      </li>
-      <li>
-        <NavLink href="/iletisim">İletişim</NavLink>
-      </li>
+      <Burger />
     </Div2>
     <Div3>
       <SocialIcons
