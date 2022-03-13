@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import { AiFillInstagram } from "react-icons/ai";
 
-import {
-    NavLink,
-  } from "./HeaderStyles";
+import { NavLink } from "./HeaderStyles";
+import { SocialIcons } from "../Header/HeaderStyles";
 
 const Ul = styled.ul`
   list-style: none;
@@ -11,23 +11,25 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
   li {
     padding: 18px 10px;
+    display: flex;
+    align-items: center;
   }
-  @media (max-width: 768px) {
+  @media ${(props) => props.theme.breakpoints.md} {
     flex-flow: column nowrap;
     background-color: ${(props) => props.theme.colors.headerText};
     position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+    width: ${({ open }) => (open ? "100%" : "0px")};
+    overflow: hidden;
     top: 0;
     right: 0;
-    height: 65vh;
-    width: 300px;
+    height: 100vh;
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
-    transition: transform 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
     li {
-        a{
-            color: ${(props) => props.theme.colors.background1};
-          }
+      a {
+        color: ${(props) => props.theme.colors.background1};
+      }
     }
   }
 `;
@@ -35,7 +37,7 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-       <li>
+      <li>
         <NavLink href="/">Hakkımızda</NavLink>
       </li>
       <li>
@@ -47,8 +49,17 @@ const RightNav = ({ open }) => {
       <li>
         <NavLink href="/iletisim">İletişim</NavLink>
       </li>
+      <li>
+        <SocialIcons
+          alwaysVisible
+          href="https://www.instagram.com/gpsikoloji06"
+          target="_blank"
+        >
+          <AiFillInstagram size="3rem" />
+        </SocialIcons>
+      </li>
     </Ul>
-  )
-}
+  );
+};
 
-export default RightNav
+export default RightNav;

@@ -35,6 +35,7 @@ const Footer = () => {
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons
+            alwaysVisible
             href="https://www.instagram.com/gpsikoloji06"
             target="_blank"
           >

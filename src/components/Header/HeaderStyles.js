@@ -16,6 +16,10 @@ export const Container = styled.div`
   -webkit-box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
   -moz-box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
   box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 1rem 2rem;
+  }
 `;
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
@@ -27,14 +31,12 @@ export const Div1 = styled.div`
   }
 `;
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 2 / 4;
   display: flex;
-  justify-content: space-between;
-  & li {
-    margin: 10px;
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 2 / 2 / 3 / 5;
+  justify-content: center;
+  align-items: center;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: none;
   }
 `;
 export const Div3 = styled.div`
@@ -52,7 +54,7 @@ export const Div3 = styled.div`
 export const NavLink = styled.a`
   font-size: 2rem;
   line-height: 32px;
-  color:  ${(props) => props.theme.colors.headerText};
+  color: ${(props) => props.theme.colors.headerText};
   transition: 0.4s ease;
   &:hover {
     color: ${(props) => props.theme.colors.headerText2};
@@ -131,40 +133,6 @@ export const SocialIcons = styled.a`
   }
 `;
 
-
-const StyledBurger = styled.div`
-  width: 2rem;
-  height: 2rem;
-  position: fixed;
-  top: 15px;
-  right: 20px;
-  z-index: 20;
-  display: none;
-  @media (max-width: 768px) {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column nowrap;
-  }
-  div {
-    width: 2rem;
-    height: 0.25rem;
-    background-color: ${({ open }) => open ? '#ccc' : '#333'};
-    border-radius: 10px;
-    transform-origin: 1px;
-    transition: all 0.3s linear;
-    &:nth-child(1) {
-      transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
-    }
-    &:nth-child(2) {
-      transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
-      opacity: ${({ open }) => open ? 0 : 1};
-    }
-    &:nth-child(3) {
-      transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
-    }
-  }
-`;
-
 const Ul = styled.ul`
   list-style: none;
   display: flex;
@@ -172,11 +140,11 @@ const Ul = styled.ul`
   li {
     padding: 18px 10px;
   }
-  @media (max-width: 768px) {
+  @media ${(props) => props.theme.breakpoints.md} {
     flex-flow: column nowrap;
-    background-color: #0D2538;
+    background-color: #0d2538;
     position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
     height: 100vh;

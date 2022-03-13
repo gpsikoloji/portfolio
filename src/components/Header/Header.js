@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillInstagram } from "react-icons/ai";
-import Burger from './Burger';
+import Burger from "./Burger";
 
 import {
   Container,
@@ -18,17 +18,10 @@ const Header = () => (
         <img src="/gp.png" style={{ width: "auto", height: "90px" }} />
       </a>
     </Div1>
-    <Div2>
-      <Burger />
-    </Div2>
     <Div3>
-      <SocialIcons
-        href="https://www.instagram.com/gpsikoloji06"
-        target="_blank"
-      >
-        <AiFillInstagram size="3rem" />
-      </SocialIcons>
+      <Burger />
     </Div3>
+    <Div2></Div2>
   </Container>
 );
 
