@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillPhone, AiFillMail } from "react-icons/ai";
+import { AiFillPhone, AiFillMail, AiOutlineEnvironment } from "react-icons/ai";
 import { MdMap } from "react-icons/md";
 
 import {
@@ -24,9 +24,11 @@ const ContactInfo = () => {
             <AiFillPhone size="3rem" />
             <LinkText>0 545 454 5554</LinkText>
           </LinkItem>
-          <LinkItem href="https://www.google.com/maps/place/Ankara/@39.9032923,32.6226801,11z/data=!3m1!4b1!4m5!3m4!1s0x14d347d520732db1:0xbdc57b0c0842b8d!8m2!3d39.9334334!4d32.8597641">
-            <MdMap size="3rem" />
-            <LinkText>Ankara</LinkText>
+          <LinkItem>
+            <LinkText>
+              ÇAYYOLU MAH.2673 CAD.GOLD N STATE İŞ MERKEZİ No:38 DAİRE 45
+              Çankaya/ANKARA
+            </LinkText>
           </LinkItem>
         </LinkColumn>
       </FlexHalfBox>

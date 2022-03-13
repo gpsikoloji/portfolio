@@ -22,7 +22,10 @@ export const PeopleDetailComp = (props) => {
           <HeaderThree title={props.title}>{props.title}</HeaderThree>
         </TitleBox>
         <DescBox>
-          <Description desc={props.desc}>{props.desc}</Description>
+          <Description
+            desc={props.desc}
+            dangerouslySetInnerHTML={{ __html: props.desc }}
+          ></Description>
         </DescBox>
       </BlogCard>
     </CardContainer>

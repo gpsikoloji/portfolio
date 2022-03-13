@@ -21,28 +21,29 @@ export const BlogCard = styled.div`
 
 export const TitleBox = styled.div`
   padding: 1rem;
+
+  & span {
+    color: ${(props) => props.theme.colors.cardText};
+  }
 `;
 
 export const HeaderThree = styled.h3`
   font-weight: 500;
-  letter-spacing: 2px;
   color: ${(props) => props.theme.colors.cardText};
   padding: 0.5rem 0;
-  font-size: 2.5rem;
-  @media ${(props) => props.theme.breakpoints.lg} {
-    font-size: 2rem;
-  }
+  font-size: 2rem;
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 `;
 
-export const Img = styled.img` 
+export const Img = styled.img`
   border-radius: 50%;
-  width: 50%;
+  width: 200px;
+  height: 200px;
   cursor: pointer;
   object-fit: cover;
   overflow: hidden;

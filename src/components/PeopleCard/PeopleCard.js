@@ -18,6 +18,7 @@ const PeopleCard = (props) => {
         </a>
         <TitleBox>
           <HeaderThree title={props.title}>{props.title}</HeaderThree>
+          <span>{props.subTitle}</span>
         </TitleBox>
       </BlogCard>
     </CardContainer>

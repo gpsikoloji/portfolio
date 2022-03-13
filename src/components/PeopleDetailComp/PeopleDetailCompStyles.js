@@ -21,7 +21,6 @@ export const TitleBox = styled.div`
 
 export const HeaderThree = styled.h3`
   font-weight: 500;
-  letter-spacing: 2px;
   color: ${(props) => props.theme.colors.cardText};
   padding: 1rem 0;
   font-size: 2.5rem;
@@ -43,7 +42,6 @@ export const DescBox = styled.div`
 
 export const Description = styled.h3`
   font-weight: 500;
-  letter-spacing: 2px;
   color: ${(props) => props.theme.colors.cardText};
   padding: 0.5rem 0;
   font-size: 2rem;

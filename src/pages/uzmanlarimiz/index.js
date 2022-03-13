@@ -18,6 +18,7 @@ const Home = () => {
             key={`PeopleCard-${index}`}
             url={item.shortName}
             title={item.title}
+            subTitle={item.subTitle}
             image={item.image}
           />
         ))}
