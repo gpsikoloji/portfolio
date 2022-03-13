@@ -9,18 +9,19 @@ import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection } from "./HeroStyles";
 
 const Hero = (props) => (
-  <>
-    <Section row nopadding>
-      <LeftSection>
-        <SectionTitle main center>
-          Güçlenerek  <br />Gelişmenizde<br /> Güvenli Liman<br /> G Psikoloji
-        </SectionTitle>
-        {/* <SectionText>
+  <Section nopadding>
+    <LeftSection>
+      <SectionTitle main center>
+        Güçlenerek <br />
+        Gelişmenizde
+        <br /> Güvenli Liman
+        <br /> G Psikoloji
+      </SectionTitle>
+      {/* <SectionText>
           Uzman kadromuzla tanışın!!
         </SectionText> */}
-      </LeftSection>
-    </Section>
-  </>
+    </LeftSection>
+  </Section>
 );
 
 export default Hero;

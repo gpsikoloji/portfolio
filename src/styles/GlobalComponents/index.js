@@ -17,8 +17,6 @@ export const Section = styled.section`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: ${(props) => (props.nopadding ? "0" : "16px 16px")};
-
-    width: 100%;
   }
 `;
 
